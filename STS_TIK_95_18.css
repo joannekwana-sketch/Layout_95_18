@@ -1,0 +1,782 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    background-color: #f3e5d0;
+
+    color: #4b2e1f;
+
+    line-height: 1.8;
+}
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    min-height: 430px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(62, 35, 20, 0.72),
+            rgba(62, 35, 20, 0.72)
+        ),
+        url("images/bali1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-bottom: 7px solid #c99a3d;
+}
+
+
+
+/* Decorative lines */
+
+header::before {
+    content: "";
+
+    position: absolute;
+
+    top: 30px;
+    left: 8%;
+    right: 8%;
+
+    height: 1px;
+
+    background-color: #e2bd63;
+
+    opacity: 0.8;
+}
+
+
+header::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 8%;
+    right: 8%;
+
+    height: 1px;
+
+    background-color: #e2bd63;
+
+    opacity: 0.8;
+}
+
+
+
+/* Header content */
+
+.header-content {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 30px;
+}
+
+
+
+/* Small title */
+
+.small-title {
+    color: #e2bd63;
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    text-indent: 0;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* Main title */
+
+header h1 {
+     font-family: 'Pacifico', cursive;
+
+    color: #fff8e8;
+
+    font-size: 72px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    transition:
+        color 0.4s ease,
+        transform 0.4s ease,
+        font-size 0.4s ease;
+
+    cursor: pointer;
+}
+
+
+
+/* TITLE HOVER */
+
+header h1:hover {
+    color: #e2bd63;
+
+    transform: scale(1.12);
+
+    font-size: 80px;
+}
+
+
+
+/* Subtitle */
+
+.subtitle {
+    color: #f3e5d0;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    margin-top: 18px;
+
+    text-indent: 0;
+
+    text-align: center;
+}
+
+
+
+/* =====================================================
+   GALLERY SECTION
+===================================================== */
+
+.gallery-section {
+    background-color: #fff8eb;
+
+    padding: 65px 6% 70px;
+
+    border-bottom: 1px solid #d5b98a;
+}
+
+
+
+/* Gallery title */
+
+.gallery-title {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+.gallery-title span {
+    color: #c99a3d;
+
+    font-size: 25px;
+}
+
+
+.gallery-title h2 {
+  font-family: 'Pacifico', cursive;
+
+    color: #5a3824;
+
+    font-size: 36px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+
+/* Gallery introduction */
+
+.gallery-intro {
+    text-align: center;
+
+    text-indent: 0;
+
+    color: #795c45;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+}
+
+
+
+/* =====================================================
+   HORIZONTAL GALLERY
+===================================================== */
+
+.gallery-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    padding: 15px 5px 25px;
+
+    scroll-behavior: smooth;
+}
+
+
+
+/* Scrollbar */
+
+.gallery-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+
+.gallery-container::-webkit-scrollbar-track {
+    background-color: #eadbc5;
+
+    border-radius: 20px;
+}
+
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background-color: #c99a3d;
+
+    border-radius: 20px;
+}
+
+
+.gallery-container::-webkit-scrollbar-thumb:hover {
+    background-color: #9a6a2f;
+}
+
+
+
+/* Gallery row */
+
+.gallery {
+    display: flex;
+
+    gap: 25px;
+
+    width: max-content;
+}
+
+
+
+/* =====================================================
+   GALLERY CARD
+===================================================== */
+
+.gallery-card {
+    width: 310px;
+
+    background-color: #f3e5d0;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 2px solid #d8bc91;
+
+    box-shadow:
+        0 8px 20px rgba(75, 46, 31, 0.15);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+
+    flex-shrink: 0;
+}
+
+
+
+/* Gallery card hover */
+
+.gallery-card:hover {
+    transform: translateY(-12px) scale(1.02);
+
+    box-shadow:
+        0 20px 35px rgba(75, 46, 31, 0.28);
+
+    border-color: #c99a3d;
+}
+
+
+
+/* Gallery images */
+
+.gallery-card img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+
+/* IMAGE HOVER */
+
+.gallery-card:hover img {
+    transform: scale(1.08);
+
+    filter: brightness(0.82);
+}
+
+
+
+/* Image information */
+
+.image-info {
+    padding: 20px;
+}
+
+
+.image-info h3 {
+     font-family: 'Pacifico', cursive;
+
+    color: #5a3824;
+
+    font-size: 19px;
+
+    margin-bottom: 7px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.gallery-card:hover .image-info h3 {
+    color: #a36f2c;
+
+    transform: translateX(5px);
+}
+
+
+.image-info p {
+    color: #705743;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    text-align: left;
+
+    text-indent: 0;
+
+    margin: 0;
+}
+
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+main {
+    background-color: #f3e5d0;
+}
+
+
+.content {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 70px 30px 80px;
+}
+
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-bottom: 45px;
+}
+
+
+.section-title span {
+    color: #c99a3d;
+
+    font-size: 25px;
+}
+
+
+.section-title h2 {
+    font-family: 'Pacifico', cursive;
+    color: #5a3824;
+    font-size: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: none;
+}
+
+
+
+/* =====================================================
+   CULTURE CARDS
+===================================================== */
+
+.culture-card {
+    background-color: #fff8eb;
+
+    padding: 35px 40px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    border-left: 7px solid #c99a3d;
+
+    box-shadow:
+        0 7px 18px rgba(75, 46, 31, 0.12);
+
+    transition:
+        all 0.4s ease;
+}
+
+
+
+/* Card heading */
+
+.culture-card h3 {
+     font-family: 'Quicksand', sans-serif;
+
+    color: #5a3824;
+
+    font-size: 24px;
+
+    margin-bottom: 16px;
+
+    transition:
+        color 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+
+/* Paragraph */
+
+.culture-card p {
+    color: #5f4a39;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+    text-indent: 50px;
+
+    transition:
+        color 0.4s ease,
+        font-size 0.4s ease;
+}
+
+
+
+/* =====================================================
+   CULTURE CARD HOVER
+===================================================== */
+
+.culture-card:hover {
+    background-color: #ead7b9;
+
+    transform: scale(1.035);
+
+    border-left: 10px solid #d6aa4b;
+
+    box-shadow:
+        0 18px 40px rgba(75, 46, 31, 0.25);
+
+    cursor: pointer;
+}
+
+
+.culture-card:hover h3 {
+    color: #9a5f28;
+
+    transform: scale(1.05);
+}
+
+
+.culture-card:hover p {
+    font-size: 17px;
+
+    color: #503321;
+}
+
+
+
+/* =====================================================
+   MESSAGE BOX
+===================================================== */
+
+.message-box {
+    margin-top: 35px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #ead7b9;
+
+    border-left: 6px solid #c99a3d;
+
+    border-right: 6px solid #c99a3d;
+
+    border-radius: 15px;
+
+    transition:
+        all 0.4s ease;
+}
+
+
+.message-box:hover {
+    transform: scale(1.02);
+
+    background-color: #dfc49c;
+
+    box-shadow:
+        0 12px 30px rgba(75, 46, 31, 0.20);
+}
+
+
+.message-box h3 {
+      font-family: 'Quicksand', sans-serif;
+
+    color: #5a3824;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.message-box p {
+    text-align: center;
+
+    text-indent: 0;
+
+    margin: 0;
+
+    color: #5f4a39;
+
+    line-height: 1.7;
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background-color: #4b2e1f;
+
+    color: #e2bd63;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-top: 5px solid #c99a3d;
+
+    letter-spacing: 2px;
+}
+
+
+footer p {
+    text-indent: 0;
+
+    text-align: center;
+}
+
+
+.footer-small {
+    font-size: 12px;
+
+    margin-top: 5px;
+
+    color: #e8d8c0;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media screen and (max-width: 700px) {
+
+    /* HEADER */
+
+    header {
+        min-height: 330px;
+    }
+
+
+    header h1 {
+        font-size: 45px;
+    }
+
+
+    header h1:hover {
+        transform: scale(1.08);
+
+        font-size: 50px;
+    }
+
+
+    .small-title {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .subtitle {
+        font-size: 15px;
+
+        letter-spacing: 1px;
+    }
+
+
+
+    /* GALLERY */
+
+    .gallery-title h2 {
+        font-size: 25px;
+    }
+
+
+    .gallery-card {
+        width: 260px;
+    }
+
+
+    .gallery-card img {
+        height: 200px;
+    }
+
+
+
+    /* CONTENT */
+
+    .content {
+        padding: 50px 20px;
+    }
+
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+
+    .culture-card {
+        padding: 25px;
+
+        border-left-width: 5px;
+    }
+
+
+    .culture-card p {
+        text-indent: 30px;
+
+        font-size: 15px;
+    }
+
+
+    .culture-card:hover p {
+        font-size: 15.5px;
+    }
+
+
+    .culture-card h3 {
+        font-size: 20px;
+    }
+
+
+
+    /* MESSAGE */
+
+    .message-box {
+        padding: 25px 20px;
+    }
+
+
+    .message-box h3 {
+        font-size: 19px;
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 15px;
+
+        font-size: 13px;
+    }
+
+}

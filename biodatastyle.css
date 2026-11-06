@@ -1,0 +1,280 @@
+body{
+    background-image: url("snoopybg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hi{
+    background-color: rgb(162, 212, 255);
+    color: rgb(254, 254, 255);
+    text-align: center;
+    size: 30px;
+    padding: 10px;
+}
+.hey{
+    background-color: rgb(255, 238, 247);
+    color: rgb(255, 168, 203);
+    width: 800px;
+    font-family: muthiara;
+}
+@font-face {
+    font-family: muthiara;
+    src: url(Muthiara\ demo\ version.otf);
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(36, 60, 88);
+    opacity: 0.9;
+    color: rgb(252, 254, 255);
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid pink;
+}
+div.foto img{
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform:scale(1.1);
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform:scale(1.1);
+}
+div.food{
+    text-align: center;
+    display: flex;
+    gap: 120px;
+}
+img{
+    padding: 5px;
+    border-radius: 15px;
+}
+div.Sushi{
+    background-color: rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Sushi:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73);
+}
+div.Pizza{
+    background-color: rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Pizza:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73);
+}
+div.xiaolongbao{
+    background-color: rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.xiaolongbao:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73);
+}
+div.Rawon{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Rawon:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73);
+}
+div.drinks{
+    text-align: center;
+    display: flex;
+    gap: 120px;
+}
+div.Matcha{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Matcha:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}div.Boba{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Boba:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}
+div.Sirsak{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Sirsak:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}
+div.Hojicha{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Hojicha:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}
+div.animal{
+    text-align: center;
+    display: flex;
+    gap: 120px;
+}
+div.Dog{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.Dog:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}
+div.whale{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.whale:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}div.giraffe{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.giraffe:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}div.pig{
+    background-color:rgb(255, 181, 198);
+    width: 240px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.pig:hover{
+   overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 10px rgb(120, 59, 73); 
+}

@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.hello{
+    text-align: left;
+    width: 1270px;
+    height: 400px;
+} 
+
+@font-face{
+    font-family: milky matcha;
+    src: url(milky_matcha/Milky\ Matcha.otf);
+}
+.sigh{
+    font-family: milky matcha;
+    color: #ffd82c;
+    background-color: #fffae4;
+    width: 325px;
+    margin-left: 10px;
+}
+/*style pada topnav*/
+.topnav{
+    overflow: hidden;
+    background-color: rgb(230, 243, 255);
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: rgb(54, 79, 125);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: azure;
+    color: darkslateblue;
+}
+.footer{
+    background-color: rgb(255, 238, 247);
+    padding: 10px;
+    text-align: center;
+}
+
+ol{
+    background-color: #fffae4;
+    border: 3px solid #ffed9c;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+ol li{
+    background-color: #ffe1f3;
+    border: 2px solid #f083c6;
+    margin: 6px 0;
+    padding: 6px 12px;
+}
+ul{
+    background-color: #fffae4;
+    border: 3px solid #ffed9c;
+    padding: 15px 30px;
+    margin: 10px;
+    list-style-position: inside;
+}
+ul li{
+    background-color: #ffe1f3;
+    border: 2px solid #f083c6;
+    margin: 6px 0;
+    padding: 6px 12px; 
+}
+.a{
+   background-color: #f083c6; 
+}
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+}
+th,td{
+    padding: 5px;
+}
+tr{
+    background-color: #d1e9ff;
+}
+trP:nth-child(even){
+    background-color: #d1e9ff;
+}
+tr:hover{
+    background-color: #feffde;
+}
+.six{
+    font-family: milky matcha;
+    background-color: rgb(140, 194, 255);
+    color: rgb(215, 234, 255);
+    width: 280px;
+}
+.seven{
+    font-family: milky matcha;
+    background-color: rgb(140, 194, 255);
+    color: rgb(215, 234, 255);
+    width: 200px;
+}
+.shan{
+    background-color: #8fc9ff;
+}
+.elle{
+    background-color: #b1daff;
+}
+.lin{
+    background-color: #8fc9ff;
+}
+
+
+
+
